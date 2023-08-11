@@ -30,7 +30,7 @@
 1.styles.css
 
 ## js
-1. main.js
+1. menu.js
 
 
 
