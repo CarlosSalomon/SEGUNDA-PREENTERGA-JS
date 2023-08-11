@@ -1,0 +1,104 @@
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.fondo {
+  display: flex;
+  flex-direction: column ;
+  height: 90vh;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.3rem;
+  color: #61043d;
+
+}
+
+.navbar-toggler {
+  color: #61043d;
+
+}
+
+.img {
+  display: flex;
+
+
+}
+
+.img_logo {
+  width: 800px;
+}
+
+.footer {
+  display: flex;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.btn{
+  position: relative;
+  padding: 20px 50px;
+  text-decoration: none;
+  border-radius: 30rem;
+  color: #000000;
+  letter-spacing: 10px;
+  text-indent: 10px;
+  z-index: 2;
+}
+
+
+.btnini{
+  border: 3px solid #330007;
+  
+  overflow: hidden;
+}
+
+.btnini::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color:#61043d;
+  z-index: -2;
+}
+
+.btnini::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  left: 0;
+  bottom: -150%;
+  border-radius: 30%;
+  background-color: #ffffff;
+  
+  z-index: -1;
+}
+
+.btnini:hover::before{
+  animation: btnini 1s linear both;
+}
+
+
+@keyframes btnini {
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      bottom: 100px;
+      transform: rotate(360deg);
+      
+  }
+}
