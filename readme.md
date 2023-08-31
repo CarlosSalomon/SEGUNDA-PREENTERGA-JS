@@ -6,8 +6,7 @@
 
 -**Tutores:** 
 1. Ezequiel Madrid
-2. Milton Salazar
-3. Joaquin Pontoriero
+2. Joaquin Pontoriero
 
 -**Alumno:** Carlos Salomón
 
@@ -22,8 +21,8 @@
 
 ## html
 
-1.Index.html
-
+1.index.html
+2.compra.html
 
 ## css
 
@@ -31,8 +30,5 @@
 
 ## js
 1. menu.js
-
-
-
-
-
+2. carrito.js
+3. productos.js
