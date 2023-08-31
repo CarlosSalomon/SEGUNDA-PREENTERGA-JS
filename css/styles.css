@@ -6,7 +6,7 @@ html {
 
 .fondo {
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
   height: 90vh;
   background-color: black;
   background-position: center;
@@ -45,7 +45,7 @@ html {
   align-items: center;
 }
 
-.btn{
+.btn {
   position: relative;
   padding: 20px 50px;
   text-decoration: none;
@@ -57,24 +57,24 @@ html {
 }
 
 
-.btnini{
+.btnini {
   border: 3px solid #330007;
-  
+
   overflow: hidden;
 }
 
-.btnini::after{
+.btnini::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
-  background-color:#61043d;
+  background-color: #61043d;
   z-index: -2;
 }
 
-.btnini::before{
+.btnini::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -83,22 +83,168 @@ html {
   bottom: -150%;
   border-radius: 30%;
   background-color: #ffffff;
-  
+
   z-index: -1;
 }
 
-.btnini:hover::before{
+.btnini:hover::before {
   animation: btnini 1s linear both;
 }
 
-
 @keyframes btnini {
-  0%{
-      transform: rotate(0deg);
+  0% {
+    transform: rotate(0deg);
   }
-  100%{
-      bottom: 100px;
-      transform: rotate(360deg);
-      
+
+  100% {
+    bottom: 100px;
+    transform: rotate(360deg);
+
   }
+}
+
+.btncompracar {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.ver-carrito {
+  display: flex;
+  height: 80px;
+  width: 200px;
+  margin-top: 90px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: #61043d;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  border-color: rgb(255, 255, 255);
+}
+
+.shop-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap row;
+
+}
+
+.card {
+  background-color: rgb(252, 255, 255);
+  box-shadow: 0 4px 8px 0 rgb(0, 247, 255);
+  max-width: 150px;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  font-family: arial;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+.cantidad-carrito {
+  display: flex;
+  color: #ffffff;
+  font-display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  font-size: 1rem;
+  background-color: #61043d;
+  border-style: outset;
+  border-radius: 50%;
+  border-color: rgb(255, 255, 255);
+  margin-top: 20px;
+
+}
+
+.card>img {
+  display: flex;
+  width: 100%;
+  height: 200px;
+}
+
+
+.card button {
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: #ac316f;
+  position: relative;
+  border: 2px solid #318aac;
+  outline: 1px solid;
+  outline-color: rgba(20, 123, 163, 0.4);
+  transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  width: 100%;
+}
+
+.card button:hover {
+  box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+  outline-color: rgba(49, 137, 172, 0);
+  outline-offset: 80px;
+  text-shadow: 1px 1px 6px #fff;
+}
+
+.modal-container {
+  width: 80%;
+  margin: 0 20%;
+  max-height: 60vh;
+  color: #000000;
+  background-color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  overflow: auto;
+  z-index: 9;
+  top: 130px;
+  flex-wrap: nowrap;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000000;
+  color: #ffffff;
+  width: 100%;
+}
+
+.modal-header-title {
+  justify-self: start;
+}
+
+.modal-header-button {
+  cursor: pointer;
+}
+
+.modal-container>.modal-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.modal-container>div>img {
+  height: 100px;
+  width: 100px;
+}
+
+.total-content {
+  background-color: #4e0027;
+  border-radius: 50px;
+  margin: 5px;
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  padding-top: 20px;
 }

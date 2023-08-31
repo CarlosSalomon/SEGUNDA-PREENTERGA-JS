@@ -11,7 +11,7 @@
 
 -**Alumno:** Carlos Salomón
 
-## 2° PRE-ENTREGA JAVASCRIPT
+## 3° PRE-ENTREGA JAVASCRIPT
 
 # lifewine_proyecto
 
